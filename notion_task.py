@@ -46,4 +46,10 @@
 # else:
 #     print("Not a Palindrome Number")
 
+# some problems
+
+
+
+
+
 
