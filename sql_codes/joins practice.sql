@@ -26,6 +26,7 @@ VALUES
 SELECT * FROM student;
 SELECT * FROM course;
 SELECT * FROM student INNER JOIN course ON student.id=course.id;
+-- 
 
 
 
