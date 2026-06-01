@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    margin: 0;
+    padding: 40px;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+}
+
+fieldset{
+    border: 2px solid #3498db;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+legend{
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    padding: 0 10px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+textarea,
+input[type="tel"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 90px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+</style>
+</head>
+
+<body>
+    <form >
+    <label>Billing Address:</label><br>
+    <textarea name="billing_address" rows="4" cols="40"></textarea>
+    <div>
+
+        <legend>Additional Information</legend>
+
+        <label>Special Requests:</label><br>
+        <textarea name="requests" rows="4" cols="40"></textarea>
+        <br>
+
+        <label>Emergency Contact Number:</label>
+        <input type="tel" name="emergency_contact" placeholder="Enter Emergency Contact Number">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+
+</html>

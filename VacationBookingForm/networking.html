@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>networking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            margin: 0;
+            padding: 40px;
+        }
+
+        form {
+            width: 400px;
+            margin: auto;
+        }
+
+        fieldset {
+            border: 2px solid #3498db;
+            border-radius: 12px;
+            padding: 25px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+            padding: 0 10px;
+        }
+
+        h3 {
+            text-align: center;
+            color: #3498db;
+            margin-top: 0;
+        }
+
+        .bank-option {
+            margin: 12px 0;
+        }
+
+        .bank-option label {
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .proceed-btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Net Banking</legend>
+
+            <label>Select Bank</label><br>
+
+            <input type="radio" id="sbi" name="bank" value="https://www.onlinesbi.sbi/">
+            <label for="sbi">SBI</label><br>
+
+            <input type="radio" id="hdfc" name="bank" value="https://netbanking.hdfcbank.com/">
+            <label for="hdfc">HDFC</label><br>
+
+            <input type="radio" id="icici" name="bank" value="https://infinity.icicibank.com/">
+            <label for="icici">ICICI</label><br>
+
+            <input type="radio" id="pnb" name="bank" value="https://netpnb.com/">
+            <label for="pnb">PNB</label><br>
+
+            <input type="radio" id="axis" name="bank" value="https://retail.axisbank.co.in/">
+            <label for="axis">Axis Bank</label><br><br>
+
+            <button type="button" onclick="goToBank()">
+                Proceed to Net Banking
+            </button>
+
+            <script>
+                function goToBank() {
+                    let bank = document.querySelector('input[name="bank"]:checked');
+
+                    if (bank) {
+                        window.open(bank.value, "_blank");
+                    }
+                    else {
+                        alert("Please select a bank");
+                    }
+                }
+            </script>
+            <br>
+
+            </div>
+            <button ><a href="billing.html" target="_blank">NEXT</a></button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

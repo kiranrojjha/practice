@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>payment</title>
+       <style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+label{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 25px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+</style>
+      
+</head>
+
+<body>
+       <form>
+              <label>Payment Method</label><br>
+
+              <button><a href="card.html" target="_self">CARD</a></button>
+
+              <button><a href="upi.html" target="_self">UPI</a></button>
+
+              <button><a href="networking.html" target="_self">NETWORKING</a></button>
+       </form>
+</body>
+
+</html>
