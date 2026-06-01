@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>Wallpaper page</h1>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Services</a> |
+        <a href="#">Blog</a>
+    </nav>
+    <h2>some images</h2>
+    <br>
+    <img src="https://i.pinimg.com/1200x/9c/a8/7b/9ca87b97ba1488d8976979cc383d5994.jpg" alt="wallpaper1" height="123">
+    <img src="https://i.pinimg.com/736x/92/e7/a9/92e7a9e8029ef5900ba8f716da813ee5.jpg" alt="wallpaper3" height="123">
+    <img src="https://i.pinimg.com/1200x/cc/2c/9f/cc2c9f78f2f1c41f7c6e4953cd7fe0c4.jpg" alt="wallpaper 4" height="123">
+    <img src="https://i.pinimg.com/736x/a0/f4/74/a0f474b975fe9d659fbb26a228364422.jpg" alt="wallpaper 5 " height="123">
+    <img src="https://i.pinimg.com/1200x/b6/89/9e/b6899e92e12b26d107a0fa2c9ca96ff3.jpg" alt="wallpaper2" height="123">
+    <br>
+    <pre>the chemical equation is:
+        C + O<sub>2</sub> = CO<sub>2</sub> 
+             </pre>
+    <a href="https://google.co</a>m" target="_blank">Google
+        <a href="https://google.com" target="_self">Google</a>
+        <a href="OnlineBookStore.html" target="_parent">Open</a>
+        <a href="page.html" target="_top">Open</a>
+        <h1>Tables in HTML</h1>
+        <table>
+            <!-- Head of the table  -->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+            <!-- Body of the table  -->
+            <tbody>
+                <tr>
+                    <td>Harry</td>
+                    <td>Software Developer</td>
+                    <td>$70000</td>
+                </tr>
+                <tr>
+                    <td>Rohan</td>
+                    <td>Software Helper</td>
+                    <td>$7</td>
+                </tr>
+                <tr>
+                    <td>Shivam</td>
+                    <td>ML Engineer</td>
+                    <td>$100</td>
+                </tr>
+
+                <tr>
+                    <td>Renuka</td>
+                    <td>AI Engineer</td>
+                    <td>$100000</td>
+                </tr>
+                <tr>
+                    <td>Thank</td>
+                    <td colspan="2">You</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Lists in HTML</h1>
+        <!-- Ordered List  -->
+        <h2>Steps to Bake a Cake</h2>
+        <ol>
+            <li>Preheat the oven to 350°F (175°C).</li>
+            <li>Mix the dry ingredients.</li>
+            <li>Whisk the eggs, milk, and vanilla extract.</li>
+            <li>Combine wet and dry ingredients.</li>
+            <li>Pour the batter into the pan and bake for 30 minutes.</li>
+            <li>Let the cake cool before serving.</li>
+        </ol>
+
+        <!-- Unordered List  -->
+        <h2>Groceries to Buy</h2>
+        <ul>
+            <li>Milk</li>
+            <li>Bread</li>
+            <li>Eggs</li>
+            <li>Butter</li>
+            <li>Vegetables</li>
+        </ul>
+
+        <!-- Definition List -->
+        <h2>Programming Languages</h2>
+        <dl>
+            <dt>Python</dt>
+            <dd>A high-level, interpreted programming language known for its ease of use.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>A scripting language primarily used for dynamic web pages.</dd>
+
+            <dt>HTML</dt>
+            <dd>The standard markup language for creating web pages.</dd>
+
+            <dt>CSS</dt>
+            <dd>A stylesheet language used to describe the presentation of a document written in HTML.</dd>
+        </dl>
+        <!-- Form starts here -->
+        <h1>Forms in html</h1>
+        <form action="/submit.php">
+            <!-- Text input for Name -->
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter Name" required>
+            </div>
+
+            <!-- Phone input -->
+            <div>
+                <label for="ph">Phone</label>
+                <input id="ph" type="tel" placeholder="Enter Phone" required>
+            </div>
+
+            <!-- Email input -->
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter Email" required>
+            </div>
+
+            <!-- Password input -->
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter Password" required>
+            </div>
+
+            <!-- Date input -->
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date" required>
+            </div>
+
+            <!-- Dropdown (select input) for Gender -->
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Radio buttons for Subscription Plan -->
+            <div>
+                <p>Subscription Plan</p>
+                <input id="basic" type="radio" name="subscription" value="basic">
+                <label for="basic">Basic</label>
+
+                <input id="premium" type="radio" name="subscription" value="premium">
+                <label for="premium">Premium</label>
+
+                <input id="vip" type="radio" name="subscription" value="vip">
+                <label for="vip">VIP</label>
+            </div>
+
+            <!-- Checkbox for agreeing to terms -->
+            <div>
+                <input id="terms" type="checkbox" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+
+            <!-- Textarea for Comments -->
+            <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <!-- Form ends here -->
+        <h3> a video emmedded in it .</h3>
+        <video width="264" autoplay loop controls muted>
+            <source src="indownloader.app_video_0714392001773326871.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+</body>
+
+</html>
